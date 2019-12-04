@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Session5Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D2DBDD">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:background="#FFFDFD"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="20dp">
+
+            <TextView
+                android:id="@+id/datecalucationTextView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="40dp"
+                android:text="Date Calculation"
+                android:textAllCaps="false"
+                android:textColor="#070505"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/from_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="From"
+                android:textAllCaps="false"
+                android:textColor="#070505"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/birthDateEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColorHint="#070505"
+                android:hint="Enter birth date"
+                android:inputType="date" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="To"
+                android:textAllCaps="false"
+                android:textColor="#070505"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/targetDateEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#070505"
+                android:hint="Enter target date"
+                android:ems="10"
+                android:inputType="date" />
+
+            <TextView
+                android:id="@+id/different_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Difference"
+                android:textAllCaps="false"
+                android:textColor="#070505"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/dateDifferenceShow_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Difference"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textColor="#070505"
+                android:textSize="30sp"
+                android:layout_margin="30sp"/>
+
+            <TextView
+                android:id="@+id/days_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Days"
+                android:textAllCaps="false"
+                android:textColor="#070505"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

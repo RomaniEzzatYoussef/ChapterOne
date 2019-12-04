@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "390542857011",
+    "firebase_url": "https://chapterone-94b79.firebaseio.com",
+    "project_id": "chapterone-94b79",
+    "storage_bucket": "chapterone-94b79.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:390542857011:android:c01294492e31137d",
+        "android_client_info": {
+          "package_name": "com.romani.chapterone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "390542857011-m1bpt8a5mld1urgq6uc70o8ksqg0f22k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.romani.chapterone",
+            "certificate_hash": "423963edcb19a33b4ee4de6bcad1f5bad69eeaf8"
+          }
+        },
+        {
+          "client_id": "390542857011-cegh9dhl5hvjlm3i8b5gldjhv1eoiqb3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuwZdOfvU3fKRFQMbkKOPHcdtsegy5ybg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "390542857011-cegh9dhl5hvjlm3i8b5gldjhv1eoiqb3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Point3Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/teamA_layout"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/teamA_txtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="16sp"
+                android:text="Team A"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/teamAscore_txtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/teamA_txtView"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20sp"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="35dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/points3A_btn"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/teamAscore_txtView"
+                android:layout_margin="20sp"
+                android:background="#FF3D00"
+                android:layout_centerHorizontal="true"
+                android:text="+3 Points"
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:id="@+id/points2A_btn"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/points3A_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20sp"
+                android:background="#FF3D00"
+                android:text="+2 Points"
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:id="@+id/freeThrowA_btn"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/points2A_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20sp"
+                android:background="#FF3D00"
+                android:text="free throw"
+                android:textColor="@android:color/black" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/line_textView"
+            android:layout_width="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/teamA_layout"
+            android:layout_height="400dp"
+            android:background="@android:color/black"/>
+
+        <RelativeLayout
+            android:layout_width="174dp"
+            android:layout_height="385dp"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/teamB_txtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="16sp"
+                android:text="Team B"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/teamBscore_txtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/teamB_txtView"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20sp"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="35dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/points3B_btn"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/teamBscore_txtView"
+                android:layout_margin="20sp"
+                android:layout_centerHorizontal="true"
+                android:background="#FF3D00"
+                android:text="+3 Points"
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:id="@+id/points2B_btn"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/points3B_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20sp"
+                android:background="#FF3D00"
+                android:text="+2 Points"
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:id="@+id/freeThrowB_btn"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/points2B_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20sp"
+                android:background="#FF3D00"
+                android:text="free throw"
+                android:textColor="@android:color/black" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/next_btn"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/reset_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="30dp"
+            android:background="#FF3D00"
+            android:onClick="next"
+            android:text="Next"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/reset_btn"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="30dp"
+            android:background="#FF3D00"
+            android:text="reset"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

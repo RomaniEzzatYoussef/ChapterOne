@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/messageTxtView"
+                android:layout_width="394dp"
+                android:layout_height="74dp"
+                android:text="Saved String"
+                android:textAppearance="@android:style/TextAppearance.WindowTitle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.462"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.779" />
+
+            <TextView
+                android:id="@+id/messageTxtView2"
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:text="Loaded String"
+                android:textAppearance="@android:style/TextAppearance.WindowTitle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.462"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.779" />
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="392dp"
+                android:layout_height="wrap_content"
+                android:onClick="saveFile"
+                android:text="save"
+                tools:layout_editor_absoluteX="151dp"
+                tools:layout_editor_absoluteY="62dp" />
+
+            <Button
+                android:id="@+id/loadButton"
+                android:layout_width="392dp"
+                android:layout_height="wrap_content"
+                android:onClick="loadFile"
+                android:text="load"
+                tools:layout_editor_absoluteX="151dp"
+                tools:layout_editor_absoluteY="62dp" />
+
+            <Button
+                android:id="@+id/loadMonkey"
+                android:layout_width="391dp"
+                android:layout_height="wrap_content"
+                android:onClick="loadMonkeyFile"
+                android:text="load Monkey File"
+                tools:layout_editor_absoluteX="151dp"
+                tools:layout_editor_absoluteY="62dp" />
+
+            <EditText
+                android:id="@+id/editTextFile"
+                android:layout_width="397dp"
+                android:layout_height="79dp"
+                android:ems="10"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/monkeyTxtView"
+                android:layout_width="match_parent"
+                android:layout_height="265dp"
+                android:text="Monkey File"
+                android:textAppearance="@android:style/TextAppearance.WindowTitle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.462"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.779" />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

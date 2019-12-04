@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MovieActivity">
+
+    <ScrollView
+        tools:layout_editor_absoluteY="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/myMoviePoster"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/e"/>
+            <LinearLayout
+                android:id="@+id/mylayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/myMoviePoster"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:maxLines="1"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="25dp"
+                    android:text="Title"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/myMovieTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:maxLines="1"
+                    android:textSize="25dp"
+                    android:text="Movie Title"
+                    android:textColor="#000000"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mylayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/mylayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:maxLines="1"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="25dp"
+                    android:text="Rank"
+                    android:textColor="#FF3D00"/>
+
+                <TextView
+                    android:id="@+id/myMovieRank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
+                    android:maxLines="1"
+                    android:textSize="25dp"
+                    android:text="Movie Rank"
+                    android:layout_below="@+id/mylayout"
+                    android:textColor="#FF3D00"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/mylayout2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:maxLines="1"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="25dp"
+                    android:text="Details"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/overview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:text="Movie OverView"
+                    android:textAlignment="center"
+                    android:textColor="#070707"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

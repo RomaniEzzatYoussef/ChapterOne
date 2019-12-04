@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TeamWinActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/scoreReview"
+            android:autoLink="web"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:textSize="35dp"
+            android:textColor="#FF3D00"
+            android:text="Score Review:"/>
+
+        <LinearLayout
+            android:id="@+id/mylayout"
+            android:layout_marginRight="33dp"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="33dp"
+            android:layout_below="@+id/scoreReview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="25dp"
+                android:layout_height="wrap_content"
+                android:text="Team A"
+                android:layout_weight="1" />
+
+            <TextView
+                android:textSize="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team B"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="33dp"
+            android:layout_below="@+id/mylayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="50dp"
+                android:textColor="#FF3D00"
+                android:id="@+id/teamA_txt_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team A score"
+                android:layout_weight="1" />
+
+            <TextView
+                android:textSize="50dp"
+                android:textColor="#FF3D00"
+                android:id="@+id/teamB_txt_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team B score"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/team_win_txtView"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#6BB621"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:text="winner" />
+
+        <Button
+            android:id="@+id/showRandomNumber_button"
+            android:layout_below="@+id/team_win_txtView"
+            android:layout_centerInParent="true"
+            android:textColor="#FF3D00"
+            android:layout_margin="33dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Random Number"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:layout_below="@+id/showRandomNumber_button"
+            android:layout_centerInParent="true"
+            android:onClick="showToast"
+            android:textColor="#FF3D00"
+            android:layout_margin="33dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Toast"
+            android:textAllCaps="false"/>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Session4Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E7E6E6"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/birthEditText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="50sp"
+            android:ems="10"
+            android:hint="Enter birth year"
+            android:inputType="textPersonName"
+            android:textColor="#070505"
+            android:textColorHint="#000000" />
+
+        <TextView
+            android:id="@+id/datecalucationTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily=""
+            android:text="Date Calculation"
+            android:textAllCaps="false"
+            android:textColor="#070505"
+            android:textSize="24dp" />
+
+        <Button
+            android:id="@+id/startBtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="#DBC9C9"
+            android:text="Start"
+            android:textAllCaps="false"
+            android:textColor="#FF0505"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/returnToAmitBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="#DBC9C9"
+            android:onClick="onButtonClick"
+            android:text="Return To Amit Sessions Activity"
+            android:textAllCaps="false"
+            android:textColor="#FF0505"
+            android:textSize="25dp" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

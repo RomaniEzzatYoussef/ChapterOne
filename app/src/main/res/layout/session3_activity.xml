@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Session3Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E7E6E6"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/birthEditText"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:textColor="#070505"
+            android:layout_marginBottom="50sp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Enter birth year"
+            android:textColorHint="#000000"/>
+
+        <TextView
+            android:id="@+id/datecalucationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily=""
+            android:text="Date Calculation"
+            android:textAllCaps="false"
+            android:textColor="#070505"
+            android:textSize="24dp" />
+
+        <Button
+            android:id="@+id/startBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="false"
+            android:textSize="25dp"
+            android:background="#DBC9C9"
+            android:textColor="#FF0505"
+            android:text="Start" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BlankFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/hello_blank_fragment" />
+
+    <LinearLayout
+        android:layout_width="-1dp"
+        android:layout_height="-1dp"
+        android:layout_marginTop="@dimen/cardview_default_radius"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/ii"
+            android:layout_width="-1dp"
+            android:layout_height="-2dp"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_horizontal_margin"/>
+
+        <RadioButton
+            android:id="@+id/ddd"
+            android:layout_width="-2dp"
+            android:layout_height="-2dp"
+            android:checked="true"
+            android:text="C" />
+
+        <RadioButton
+            android:id="@+id/dw"
+            android:layout_width="-2dp"
+            android:layout_height="-2dp"
+            android:checked="false"
+            android:text="C#" />
+
+        <RadioButton
+            android:id="@+id/edwedw"
+            android:layout_width="-2dp"
+            android:layout_height="-2dp"
+            android:checked="false"
+            android:text="D" />
+
+        <RadioButton
+            android:id="@+id/adqw"
+            android:layout_width="-2dp"
+            android:layout_height="-2dp"
+            android:checked="false"
+            android:text="D#" />
+
+        <RadioButton
+            android:id="@+id/sassa"
+            android:layout_width="-2dp"
+            android:layout_height="-2dp"
+            android:checked="false"
+            android:text="E" />
+
+        <RadioButton
+            android:layout_width="-2dp"
+            android:layout_height="-2dp"
+            android:checked="false"
+            android:text="F" />
+
+        <RadioButton
+            android:layout_width="-2dp"
+            android:layout_height="-2dp"
+            android:checked="false"
+            android:text="F#" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RomaniMenuActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView22"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#536DFE"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp">
+
+
+        <LinearLayout
+            android:id="@+id/linearParent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="35sp"
+                android:text="Romani Menu"
+                android:textColor="#FF0303"
+                android:textStyle="bold|italic|normal"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="500dp">
+
+                <Button
+                    android:id="@+id/point1_btn"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:padding="-100dp"
+                    android:onClick="startPoint1Activity"
+                    android:text="Point 1"
+                    android:textAllCaps="false"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/point2_btn"
+                    android:textAllCaps="false"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@id/point1_btn"
+                    android:layout_width="70dp"
+                    android:onClick="startPoint2Activity"
+                    android:layout_height="wrap_content"
+                    android:text="Point 2" />
+
+                <Button
+                    android:id="@+id/point3_btn"
+                    android:layout_width="70dp"
+                    android:textAllCaps="false"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/point2_btn"
+                    android:layout_alignParentTop="true"
+                    android:onClick="startPoint3Activity"
+                    android:text="Point 3" />
+                <Button
+                    android:id="@+id/point4_btn"
+                    android:layout_width="70dp"
+                    android:textAllCaps="false"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/point3_btn"
+                    android:layout_alignParentTop="true"
+                    android:text="Point 4" />
+
+                <Button
+                    android:id="@+id/point5_btn"
+                    android:layout_width="80dp"
+                    android:textAllCaps="false"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/point4_btn"
+                    android:layout_alignParentTop="true"
+                    android:text="Point 5" />
+
+                <Button
+                    android:id="@+id/point6_btn"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/point1_btn"
+                    android:layout_alignParentLeft="true"
+                    android:text="Point 6"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/point7_btn"
+                    android:layout_width="70dp"
+                    android:textAllCaps="false"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/point6_btn"
+                    android:layout_below="@id/point2_btn"
+                    android:text="Point 7" />
+
+                <Button
+                    android:id="@+id/point8_btn"
+                    android:layout_width="70dp"
+                    android:textAllCaps="false"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/point7_btn"
+                    android:layout_below="@id/point3_btn"
+                    android:text="Point 8" />
+
+                <Button
+                    android:id="@+id/point9_btn"
+                    android:layout_width="70dp"
+                    android:textAllCaps="false"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/point8_btn"
+                    android:layout_below="@id/point4_btn"
+                    android:text="Point 9" />
+
+                <Button
+                    android:id="@+id/point10_btn"
+                    android:layout_width="80dp"
+                    android:textAllCaps="false"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/point9_btn"
+                    android:layout_below="@id/point5_btn"
+                    android:text="Point 10" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/point6_btn"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/romani"
+                    android:layout_above="@+id/linear1_below"/>
+
+                <LinearLayout
+                    android:id="@+id/linear1_below"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#00B0FF"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:background="#000000"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/problemSolvingAmitButton"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:textAllCaps="false"
+                            android:layout_weight="1"
+                            android:onClick="showRandomActivity"
+                            android:text="Random" />
+
+                        <Button
+                            android:id="@+id/problemSolvingRomaniButton"
+                            android:textAllCaps="false"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:onClick="showFileActivity"
+                            android:text="File" />
+
+                        <Button
+                            android:id="@+id/button"
+                            android:layout_width="0dp"
+                            android:textAllCaps="false"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:onClick="showEditFileActivity"
+                            android:text="Edit File" />
+
+                        <Button
+                            android:id="@+id/changeViewbutton"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:onClick="changeViewButton"
+                            android:padding="0dp"
+                            android:text="Change Button"
+                            android:textAllCaps="false" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAllCaps="false"
+                        android:layout_margin="16dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/imageButton"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:onClick="showKrisActivity"
+                            android:textAllCaps="false"
+                            android:text="Kris Image"
+                            app:layout_constraintBottom_toTopOf="@+id/textView"
+                            app:layout_constraintTop_toBottomOf="@+id/textView"
+                            app:layout_constraintVertical_bias="1.0"
+                            tools:layout_editor_absoluteX="109dp" />
+
+
+
+                        <Button
+                            android:id="@+id/hex2Decbutton"
+                            android:textAllCaps="false"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:onClick="showHexActivity"
+                            android:text="Hex To Decimal" />
+
+                        <Button
+                            android:id="@+id/login"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:textAllCaps="false"
+                            android:layout_weight="1"
+                            android:onClick="showLoginActivity"
+                            android:text="log in" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>nearL
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

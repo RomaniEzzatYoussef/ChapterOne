@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="200dp"
+    android:layout_height="300dp"
+    android:layout_margin="30dp"
+    android:background="#F0F0F0"
+    android:layout_centerInParent="true">
+
+    <ImageView
+        android:id="@+id/myImageView1"
+        android:layout_width="match_parent"
+        android:layout_height="121dp"
+        android:layout_alignParentBottom="true"
+        app:srcCompat="@drawable/d" />
+
+    <TextView
+        android:id="@+id/myUserName"
+        android:layout_width="match_parent"
+        android:textSize="30dp"
+        android:layout_margin="10dp"
+        android:textColor="@android:color/black"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/myUserAge"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/myUserName"
+        android:layout_toRightOf="@+id/myImageView"
+        android:textColor="@android:color/black"
+        android:layout_height="wrap_content"
+        android:text="29 mutual friends" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Friend"
+            android:layout_marginRight="20dp"
+            android:textColor="#0000FF"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="Remove"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditFileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#C8E4DBE4"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#CDCAD8"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fileTitleTV"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:text="Enter Contents for file"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/fileContentsEdtText"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:background="#0B0B13"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="writeFileButton"
+                android:text="write file" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#2A343C"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/removableStringFileTV"
+                    android:layout_width="220dp"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:text="Enter a string to remove from file: "
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/removableEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="true"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#2A343C"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/replacableTV"
+                    android:layout_width="220dp"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:text="Enter a string to replace in file: "
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/replacableEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="true"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="30sp"
+                android:onClick="removeTextFromFile"
+                android:text="Change File"/>
+
+            <TextView
+                android:id="@+id/fileTxtView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#42AA38"
+                android:textColor="@android:color/black"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="countFileChars"
+                android:text="count" />
+
+            <TextView
+                android:id="@+id/messageTxtView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#2559B6"
+                android:textColor="@android:color/black"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
